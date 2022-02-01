@@ -161,3 +161,5 @@ BOARD_AVB_RECOVERY_ROLLBACK_INDEX_LOCATION := 1
 
 # VNDK
 BOARD_VNDK_VERSION := current
+
+$(call inherit-product, vendor/xiaomi/atom-ims/BoardConfigVendor.mk)
