@@ -86,6 +86,18 @@ PRODUCT_PACKAGES += \
     libhwbinder \
     libhwbinder.vendor    
 
+# LiveDisplay native
+PRODUCT_PACKAGES += \
+    vendor.lineage.livedisplay*
+
+# Touch
+PRODUCT_PACKAGES += \
+    vendor.lineage.touch*
+
+# Trust HAL
+PRODUCT_PACKAGES += \
+    vendor.lineage.trust*
+
 # IMS
 PRODUCT_PACKAGES += \
 	vendor.mediatek.hardware.mtkradioex@1.0 \
