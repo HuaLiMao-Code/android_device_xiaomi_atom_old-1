@@ -3,6 +3,13 @@
 #
 # For special ro override property
 
+# Audio
+ro.camera.sound.forced=0
+ro.audio.silent=0
+
+# Brand
+Build.BRAND=MTK
+
 # White Point Calibration
 ro.vendor.whitepoint_calibration_enable=false
 #Property for display feature histogram
@@ -30,6 +37,7 @@ ro.vendor.fod.dimlayer.enable=true
 
 # 5g capability(0: not support 1:nsa 2:sa 3: 1+2)
 ro.vendor.radio.5g=3
+ro.vendor.radio.features_common=2
 
 #support SLA feature
 ro.vendor.net.enable_sla=1
@@ -80,22 +88,6 @@ wifi.direct.interface=p2p0
 #dalvik.vm.heapgrowthlimit=256m
 #dalvik.vm.heapsize=512m
 
-# USB MTP WHQL
-ro.sys.usb.mtp.whql.enable=0
-
-
-ro.sys.usb.storage.type=mtp
-
-# USB BICR function
-ro.sys.usb.bicr=no
-
-# USB Charge only function
-ro.sys.usb.charging.only=yes
-
-# audio
-ro.camera.sound.forced=0
-ro.audio.silent=0
-
 ro.zygote.preload.enable=0
 
 # temporary enables NAV bar (soft keys)
@@ -128,23 +120,8 @@ ro.vendor.audio.soundtrigger.lowpower=true
 #audio-add for SoS
 ro.vendor.audio.sos=true
 
-
 #audio add vc default volume
 ro.config.vc_call_vol_default=4
-
-#Telephony features controller
-#value: 0000 0010
-ro.vendor.radio.features_common=2
-# end of device/xiaomi/mt6873_common/system.prop
-#
-# from device/xiaomi/mt6873_common/common_rw.prop
-#
-# For common rw override property
-
-#
-# from device/xiaomi/atom/special_rw.prop
-#
-# For special rw override property
 
 #system property for displayfeature hidl
 sys.displayfeature_hidl=true
@@ -164,4 +141,13 @@ persist.sys.mdlog_dumpback=2
 persist.vendor.quick.charge=1
 
 # Bluetooth
+# 来自@乐者必成
+# https://github.com/xjl12/android_device_xiaomi_atom/
 persist.bluetooth.bluetooth_audio_hal.disabled=true
+
+# USB
+ro.sys.usb.bicr=no
+ro.sys.usb.charging.only=no
+persist.sys.usb.config=adb
+ro.sys.usb.storage.type=mtp
+ro.sys.usb.mtp.whql.enable=0
