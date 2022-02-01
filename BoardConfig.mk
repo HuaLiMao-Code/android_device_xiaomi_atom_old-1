@@ -1,4 +1,4 @@
-#
+<#
 # Copyright (C) 2022 The ArrowOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -96,6 +96,7 @@ BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
 BOARD_MKBOOTIMG_ARGS += --pagesize $(BOARD_KERNEL_PAGESIZE) --board ""
 
 # MTK Rules
+TARGET_PROVIDES_MTK_PROPRIETARY := true
 TARGET_PROVIDES_MEDIATEK_IMS_STACK := true
 
 # Platform

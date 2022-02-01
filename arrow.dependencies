@@ -23,9 +23,16 @@
    "remote"      : "HuaLiMao-Code"
    "branch"      : "eleven"
  },
+{
+   "repository"  : "vendor_mediatek-opensource",
+   "target_path" : "vendor/mediatek/opensource",
+   "remote"      : "HuaLiMao-Code"
+   "branch"      : "eleven"
+ },
 ]
 // 同步以上仓库请执行以下命令
 // git clone https://github.com/HuaLiMao-Code/android_kernel_xiaomi_mt6873 -b clang-11 kernel/xiaomi/mt6873 --depth=1
 //git clone https://github.com/HuaLiMao-Code/vendor_mediatek_ims -b eleven vendor/mediatek/ims --depth=1
 //git clone https://github.com/HuaLiMao-Code/vendor_xiaomi_atom-ims -b atom-ims vendor/mediatek/atom-ims --depth=1
 //git clone https://github.com/HuaLiMao-Code/device_mediatek_common -b eleven device/mediatek/common --depth=1
+//git clone https://github.com/HuaLiMao-Code/vendor_mediatek-opensource -b eleven vendor/mediatek/opensource --depth=1
