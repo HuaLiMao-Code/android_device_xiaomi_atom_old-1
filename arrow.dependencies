@@ -1,0 +1,24 @@
+[
+ {
+   "repository"  : "kernel_xiaomi_mt6873",
+   "target_path" : "kernel/xiaomi/mt6873",
+   "remote"      : "HuaLiMao-Code"
+   "branch"      : "clang-11"
+ },
+ {
+   "repository"  : "vendor_xiaomi_atom-ims",
+   "target_path" : "vendor/xiaomi/atom-ims",
+   "remote"      : "HuaLiMao-Code"
+   "branch"      : "atom-ims"
+ },
+ {
+   "repository"  : "vendor_mediatek_ims",
+   "target_path" : "vendor/mediatek/ims",
+   "remote"      : "HuaLiMao-Code",
+   "branch"      : "eleven"
+ },
+]
+// 同步以上仓库请执行以下命令
+// git clone https://github.com/HuaLiMao-Code/android_kernel_xiaomi_mt6873 -b clang-11 kernel/xiaomi/mt6873 --depth=1
+//git clone https://github.com/HuaLiMao-Code/vendor_mediatek_ims -b eleven vendor/mediatek/ims --depth=1
+//git clone https://github.com/HuaLiMao-Code/vendor_xiaomi_atom-ims -b atom-ims vendor/mediatek/atom-ims --depth=1

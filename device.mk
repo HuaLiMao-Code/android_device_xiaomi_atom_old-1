@@ -22,6 +22,14 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 # Installs gsi keys into ramdisk, to boot a GSI with verified boot.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 
+# MTK Vendor Repos
+$(call inherit-product, vendor/mediatek/ims/mtk-ims.mk)
+$(call inherit-product, vendor/mediatek/ims/mtk-engi.mk)
+$(call inherit-product, vendor/mediatek/ims/mtk-rill.mk)
+
+# Inherit ims
+$(call inherit-product, vendor/xiaomi/atom-ims/atom-ims-vendor.mk)
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
@@ -97,15 +105,6 @@ PRODUCT_PACKAGES += \
 # Trust HAL
 PRODUCT_PACKAGES += \
     vendor.lineage.trust*
-
-# IMS
-PRODUCT_PACKAGES += \
-	vendor.mediatek.hardware.mtkradioex@1.0 \
-	vendor.mediatek.hardware.videotelephony@1.0 \
-	ImsService \
-	EngineerMode \
-	libsink \
-	libem_support_jni \
 
 # IFAA manager
 PRODUCT_PACKAGES += \
