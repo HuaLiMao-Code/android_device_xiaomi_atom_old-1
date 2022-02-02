@@ -29,6 +29,13 @@ $(call inherit-product, vendor/mediatek/ims/mtk-engi.mk)
 $(call inherit-product, vendor/mediatek/ims/mtk-rill.mk)
 $(call inherit-product, device/mediatek/common/target.mk)
 
+# Interfaces
+include $(LOCAL_PATH)/properties.mk
+PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
+
+# MTK interfaces
+$(call inherit-product, $(LOCAL_PATH)/interfaces.mk)
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
