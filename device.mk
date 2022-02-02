@@ -36,6 +36,9 @@ PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 # MTK interfaces
 $(call inherit-product, $(LOCAL_PATH)/interfaces.mk)
 
+# Atom vendor
+$(call inherit-product, vendor/xiaomi/atom/atom-vendor.mk)
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
