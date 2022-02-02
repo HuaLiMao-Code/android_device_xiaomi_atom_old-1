@@ -29,9 +29,6 @@ $(call inherit-product, vendor/mediatek/ims/mtk-engi.mk)
 $(call inherit-product, vendor/mediatek/ims/mtk-rill.mk)
 $(call inherit-product, device/mediatek/common/target.mk)
 
-# Inherit ims
-$(call inherit-product, vendor/xiaomi/atom-ims/atom-ims-vendor.mk)
-
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
