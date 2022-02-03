@@ -82,6 +82,19 @@ PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-service \
     libvulkan
 
+# DRM
+PRODUCT_PACKAGES += \
+    android.hardware.drm@1.0-impl:64 \
+    android.hardware.drm@1.0-service-lazy \
+    android.hardware.drm@1.4-service.clearkey
+
+PRODUCT_PACKAGES += \
+    android.hardware.drm@1.0.vendor \
+    android.hardware.drm@1.1.vendor \
+    android.hardware.drm@1.2.vendor \
+    android.hardware.drm@1.3.vendor \
+    android.hardware.drm@1.4.vendor
+    
 # Fastbootd
 PRODUCT_PACKAGES += \
     fastbootd
@@ -94,6 +107,14 @@ PRODUCT_PACKAGES += \
     vendor.xiaomi.hardware.touchfeature@1.0 \
     vendor.xiaomi.hardware.displayfeature@1.0
 
+# Gatekeeper
+PRODUCT_PACKAGES += \
+    android.hardware.gatekeeper@1.0-service \
+    android.hardware.gatekeeper@1.0-impl
+
+PRODUCT_PACKAGES += \
+    android.hardware.gatekeeper@1.0.vendor
+    
 # HIDL
 PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \
@@ -122,6 +143,19 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     org.ifaa.android.manager
 
+# Keymaster
+PRODUCT_PACKAGES += \
+    libkeymaster4.vendor:64 \
+    libkeymaster4support.vendor:64 \
+    libkeymaster_portable.vendor:64 \
+    libkeymaster_messages.vendor:64 \
+    libsoft_attestation_cert.vendor:64 \
+    libpuresoftkeymasterdevice.vendor:64 \
+    android.hardware.keymaster@4.0-service
+
+PRODUCT_PACKAGES += \
+    android.hardware.keymaster@4.0.vendor
+    
 # Ramdisk
 PRODUCT_PACKAGES += \
     init.mt6873.rc \
