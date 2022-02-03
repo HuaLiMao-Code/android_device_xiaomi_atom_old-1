@@ -668,8 +668,14 @@
         <item>4000</item>
         <item>4500</item>
     </integer-array>
-    <integer-array name="config_screenBrighteningThresholds">
-        <item>0</item>
-    </integer-array>
+    
+    <!-- 默认的设备屏幕亮度 -->
+    <integer name="config_screenBrightnessSettingDefault">102</integer>
+    
+    <!-- 允许用户调节的最大亮度 -->
+    <integer name="config_screenBrightnessSettingMaximum">255</integer>
+    
+    <!-- 允许用户调节的最小亮度 -->
+    <integer name="config_screenBrightnessSettingMinimum">10</integer>
     
 </resources>
