@@ -6,6 +6,6 @@
 <resources>
 
     <!-- The bottom margin of the keyguard security container -->
-    <dimen name="kg_security_container_min_bottom_margin">440px</dimen>
+    <dimen name="kg_security_container_min_bottom_margin">355.5px</dimen>
 
 </resources>
