@@ -678,4 +678,7 @@
     <!-- 允许用户调节的最小亮度 -->
     <integer name="config_screenBrightnessSettingMinimum">10</integer>
     
+    <!-- 亮度传感器检测频率 单位:毫秒 -->
+    <integer name="config_autoBrightnessLightSensorRate">225</integer>
+    
 </resources>
