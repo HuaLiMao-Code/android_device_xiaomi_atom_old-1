@@ -15,8 +15,9 @@
      limitations under the License.
 -->
 <resources>
+
      <!--  DT2W    -->
     <string name="dt2w_enable_title">Double-Tap to Wake </string>
     <string name="dt2w_enable_summary">Double-tap on lockscreen to wake device</string>
-    
+
 </resources>
