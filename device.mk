@@ -47,6 +47,10 @@ PRODUCT_SOONG_NAMESPACES += \
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
 
+# Xiaomi Parts
+PRODUCT_PACKAGES += \
+    XiaomiParts
+    
 # Boot animation
 TARGET_BOOT_ANIMATION_RES := 1080
 
