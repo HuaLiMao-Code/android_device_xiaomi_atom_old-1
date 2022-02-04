@@ -138,6 +138,36 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     org.ifaa.android.manager
 
+# ImsInit hack
+PRODUCT_PACKAGES += \
+    ImsInit
+
+# IMS
+PRODUCT_PACKAGES += \
+	vendor.mediatek.hardware.mtkradioex@1.0 \
+	vendor.mediatek.hardware.videotelephony@1.0 \
+	ImsService \
+	EngineerMode \
+	libsink \
+	libem_support_jni \
+	mediatek-common \
+    mediatek-framework \
+    mediatek-ims-base \
+    mediatek-ims-common \
+    mediatek-telecom-common \
+    mediatek-telephony-base \
+    mediatek-telephony-common
+
+	
+PRODUCT_BOOT_JARS += \
+    mediatek-common \
+    mediatek-framework \
+    mediatek-ims-base \
+    mediatek-ims-common \
+    mediatek-telecom-common \
+    mediatek-telephony-base \
+    mediatek-telephony-common
+
 # Keymaster
 PRODUCT_PACKAGES += \
     libkeymaster4.vendor:64 \
@@ -167,10 +197,6 @@ PRODUCT_PACKAGES += \
 # Fstab
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.mt6873:$(TARGET_COPY_OUT_RAMDISK)/fstab.mt6873
-
-# RcsService
-PRODUCT_PACKAGES += \
-    RcsService
 
 # WiFi
 PRODUCT_PACKAGES += \
@@ -213,6 +239,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/r_submix_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/r_submix_audio_policy_configuration.xml \
     $(LOCAL_PATH)/configs/audio/usb_audio_accessory_only_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_accessory_only_policy_configuration.xml \
     $(LOCAL_PATH)/configs/audio/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_policy_configuration.xml \
+    PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/permissions/privapp-permissions-mediatek.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-mediatek.xml \
+    $(LOCAL_PATH)/configs/permissions/privapp-permissions-xiaomi.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-xiaomi.xml \
 
 
 # Exclude sensor from InputManager
@@ -292,3 +321,5 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
     $(LOCAL_PATH)/configs/wifi/wpa_supplicant.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant.conf \
     $(LOCAL_PATH)/configs/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf \
+
+$(call inherit-product, vendor/xiaomi/atom/atom-vendor.mk)
