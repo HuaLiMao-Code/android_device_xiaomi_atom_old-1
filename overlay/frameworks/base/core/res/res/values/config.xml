@@ -694,9 +694,6 @@
     <integer-array name="config_ambientBrighteningThresholds">
         <item>100</item>
     </integer-array>
-
-    <!-- 默认的设备屏幕亮度 -->
-    <integer name="config_screenBrightnessSettingDefault">102</integer>
     
     <!-- 允许用户调节的最大亮度 -->
     <integer name="config_screenBrightnessSettingMaximum">255</integer>
