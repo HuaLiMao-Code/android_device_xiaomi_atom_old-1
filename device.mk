@@ -140,6 +140,36 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     org.ifaa.android.manager
 
+# ImsInit hack
+PRODUCT_PACKAGES += \
+    ImsInit
+
+# IMS
+PRODUCT_PACKAGES += \
+	vendor.mediatek.hardware.mtkradioex@1.0 \
+	vendor.mediatek.hardware.videotelephony@1.0 \
+	ImsService \
+	EngineerMode \
+	libsink \
+	libem_support_jni \
+	mediatek-common \
+    mediatek-framework \
+    mediatek-ims-base \
+    mediatek-ims-common \
+    mediatek-telecom-common \
+    mediatek-telephony-base \
+    mediatek-telephony-common
+
+	
+PRODUCT_BOOT_JARS += \
+    mediatek-common \
+    mediatek-framework \
+    mediatek-ims-base \
+    mediatek-ims-common \
+    mediatek-telecom-common \
+    mediatek-telephony-base \
+    mediatek-telephony-common
+    
 # Keymaster
 PRODUCT_PACKAGES += \
     libkeymaster4.vendor:64 \
