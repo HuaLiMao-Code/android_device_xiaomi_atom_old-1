@@ -34,6 +34,12 @@ PRODUCT_SOONG_NAMESPACES += \
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
 
+PRODUCT_PACKAGES += \
+    FrameworkResOverlay \
+    SystemUIOverlay \
+	SettingsOverlay \
+	TelephonyOverlay 
+	
 # Xiaomi Parts
 PRODUCT_PACKAGES += \
     XiaomiParts
@@ -47,10 +53,6 @@ PRODUCT_BUILD_SUPER_PARTITION := false
 
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 29
-
-# Atom overlay
-PRODUCT_PACKAGES += \
-    atom-overlay
 
 # Bluetooth
 PRODUCT_PACKAGES += \
