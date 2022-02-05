@@ -35,10 +35,7 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
 
 PRODUCT_PACKAGES += \
-    FrameworkResOverlay \
-    SystemUIOverlay \
-	SettingsOverlay \
-	TelephonyOverlay 
+    LightOverlay \
 	
 # Xiaomi Parts
 PRODUCT_PACKAGES += \
