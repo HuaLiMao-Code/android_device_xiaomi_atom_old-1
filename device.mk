@@ -48,6 +48,9 @@ PRODUCT_BUILD_SUPER_PARTITION := false
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 29
 
+# VNDK
+PRODUCT_EXTRA_VNDK_VERSIONS := 29 30
+
 # Atom overlay
 PRODUCT_PACKAGES += \
     atom-overlay
