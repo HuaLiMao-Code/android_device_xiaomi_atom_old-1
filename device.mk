@@ -104,6 +104,10 @@ PRODUCT_PACKAGES += \
     vendor.xiaomi.hardware.touchfeature@1.0 \
     vendor.xiaomi.hardware.displayfeature@1.0
 
+PRODUCT_PACKAGES += \
+    SoterService \
+    IFAAService \
+    
 # Gatekeeper
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-service \
