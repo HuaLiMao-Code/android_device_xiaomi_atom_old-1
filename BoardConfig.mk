@@ -61,6 +61,9 @@ DEVICE_MATRIX_FILE += $(DEVICE_PATH)/compatibility_matrix.xml
 DEVICE_FRAMEWORK_MANIFEST_FILE := $(DEVICE_PATH)/framework_manifest.xml
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
+# IMS
+TARGET_PROVIDES_MEDIATEK_IMS_STACK := true
+
 # Lineage Hardware
 BOARD_HARDWARE_CLASS += \
     $(VENDOR_PATH)/lineagehw

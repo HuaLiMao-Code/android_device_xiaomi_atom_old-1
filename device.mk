@@ -22,6 +22,11 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 # Installs gsi keys into ramdisk, to boot a GSI with verified boot.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 
+# Mtk Ims
+$(call inherit-product, vendor/mediatek/ims/mtk-ims.mk)
+$(call inherit-product, vendor/mediatek/ims/mtk-engi.mk)
+$(call inherit-product, vendor/mediatek/ims/mtk-rill.mk)
+
 # Interfaces
 include $(LOCAL_PATH)/properties.mk
 PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
@@ -141,32 +146,6 @@ PRODUCT_BOOT_JARS += \
 # ImsInit hack
 PRODUCT_PACKAGES += \
     ImsInit
-
-# IMS
-PRODUCT_PACKAGES += \
-	vendor.mediatek.hardware.mtkradioex@1.0 \
-	vendor.mediatek.hardware.videotelephony@1.0 \
-	ImsService \
-	EngineerMode \
-	libsink \
-	libem_support_jni \
-	mediatek-common \
-    mediatek-framework \
-    mediatek-ims-base \
-    mediatek-ims-common \
-    mediatek-telecom-common \
-    mediatek-telephony-base \
-    mediatek-telephony-common
-
-	
-PRODUCT_BOOT_JARS += \
-    mediatek-common \
-    mediatek-framework \
-    mediatek-ims-base \
-    mediatek-ims-common \
-    mediatek-telecom-common \
-    mediatek-telephony-base \
-    mediatek-telephony-common
 
 # Keymaster
 PRODUCT_PACKAGES += \
